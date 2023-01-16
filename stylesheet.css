@@ -1,0 +1,208 @@
+
+/* color scheme 
+
+grey box colors - #191C24
+green accent - #00D25B
+pink/maroon accent - #B41661
+vivid sky blue -  #0DCAF0
+crayola blue - #0D6EFD
+rusty red - #DC3545
+amber yellow - #FFC107 
+
+*/
+
+/* basic styling for webpage */
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black; 
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr auto; 
+    grid-template-columns: 250px 1fr auto;
+    gap: 10px;
+}
+/*header styling*/
+header {
+    grid-row: 1;
+    grid-column: 1/4;
+    background-color: yellow;
+}
+
+.header {
+   display: grid;
+   grid-template-columns: 200px 1fr 200px 100px;
+   grid-template-rows: 50%; 
+    
+}
+
+.header p {
+    margin-left: 10px;
+}
+/*Search bar styling*/
+.search input[type=text] {
+    width: 400px;
+    height: 25px;
+    border-radius: 25px;
+}
+
+.search {
+    grid-row: 1; 
+    grid-column: 2; 
+    margin-left: 75px;
+    margin-top: 10px;
+}
+.search img {
+    width: 25px; 
+    vertical-align: middle;
+}
+
+/*right sidebar styling*/
+.sidebar {
+    grid-row: 2/6;
+    grid-column: 3; 
+    background-color: black;
+    width: 400px;
+    margin-left: auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 40px;
+    color: white;
+
+}
+
+/*announcement area styling*/
+.announcements {
+    padding: 10px;
+    padding-bottom: 50px;
+    text-align: left;
+    border: 1px #B41661 solid; 
+    background-color: #191C24;
+    border-radius: 40px;
+    margin-bottom: 10px;
+
+}
+
+.trending {
+    display: grid; 
+    background-color: #191C24;
+    text-align: left;
+    border-radius: 40px;
+    border: solid 1px #B41661;
+}
+
+.trending h1 {
+    text-align: center;
+}
+
+.trending .profiles {
+    width: 30px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px;
+    vertical-align: -18px;
+    margin: 10px;
+
+}
+
+.trending #owl {
+    background-color: #00D25B;
+}
+
+.trending #paw {
+    background-color: #FFC107;
+}
+
+.trending #penguin {
+    background-color: #0DCAF0;
+}
+.trending ul {
+    list-style-type: none;
+    justify-content: center;
+}
+
+.announcements h1, h3{
+    text-align: center;
+    padding: 5px;
+}
+
+.announcements h3 {
+    text-decoration: underline;
+}
+
+
+
+/*Your projects / main content styling */
+
+.page-main {
+    grid-row: 2/6;
+    grid-column: 2; 
+    background-color: #191C24; 
+    grid-area: auto;
+    border-radius: 40px;
+}
+
+.page-main h1 {
+    text-align: center;
+}
+
+/*footer styling*/
+.footer {
+    grid-row: 6;
+    grid-column: 1/4; 
+    background-color: black;
+    text-align: center;
+    color: #B41661; 
+}
+
+/* Nav styling */
+.page-nav {
+    text-align: left;
+    background-color: #191C24;
+    border-radius: 40px;
+    margin-left: 10px;
+    border: 1px solid #B41661;
+}
+
+.page-nav ul {
+    list-style-type: none;
+    padding: 50px;
+    line-height: 50px;
+    color: white;
+    
+}
+
+h1 #icons {
+    height: 25px;
+    margin-right: 10px;
+    vertical-align: -4.5px;
+    filter: invert(1);
+}
+.page-nav h1 {
+    text-align: center;
+    color: white; 
+}
+.navigation #icons {
+    height: 25px;
+    width: auto;
+    vertical-align: -4.8px;
+    margin-right: 5px;
+    filter: invert(1);
+    
+}
+
+.navigation:hover {
+    color: #B41661;
+    cursor: pointer;
+}
+
+
+
