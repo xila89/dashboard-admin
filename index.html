@@ -10,14 +10,27 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="user">
+                <img src="./profiles/face-woman-shimmer.svg">
+            <p>Hi there, <br>
+           Xila (@XilaKillz)</p>
+             </div>
             <div class="search">
                 <form action="#">
                     <img src="./icons/magnify.svg">
                     <input type="text" placeholder="" name="search">
                 </form>
             </div>
-            <p>Hi there, <br>
-             Xila (@XilaKillz)</p>
+        <div class="buttons">
+            <button class="new">New</button>
+            <button class="upload">Upload</button>
+            <button class="share">Share</button>
+        </div>
+        <div class="user2">
+            <img src="./icons/bell-ring.svg" id="notification" alt="notification">
+            <img id="profilepic" src="./profiles/face-woman-shimmer.svg">
+            <span class="name">XilaKillz</span>
+        </div>
         </header>
     <nav class="page-nav">
        <h1><img src="./icons/view-dashboard.svg" id="icons">Dashboard</h1>
@@ -38,7 +51,47 @@
     </nav>
     <main class="page-main">
             <h1>Your Projects</h1>
-                <article class="cards"></article>
+                <article class="cards">
+                <div class="article">
+                    <span class="title">Super Cool Project</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea 
+                        commodo consequat.</p>
+                </div>
+                <div class="article">
+                    <span class="title">Less Cool Project</span>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                        sint occaecat cupidatat non proident, sunt in culpa qui 
+                        officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="article">
+                    <span class="title">Impossible App</span>
+                    <p>Dui nunc mattis enim ut tellus elementum sagittis vitae. 
+                        Tempor orci dapibus ultrices in iaculis. Vel pretium 
+                        lectus quam id leo in vitae turpis. Sit amet nulla 
+                        facilisi morbi tempus iaculis urna id volutpat. </p>
+                </div>
+                <div class="article">
+                    <span class="title">Easy Peasy App</span>
+                    <p>Odio euismod lacinia at quis risus sed vulputate odio ut. 
+                        Consequat interdum varius sit amet mattis vulputate enim 
+                        nulla. Morbi quis commodo odio aenean sed.</p>
+                </div>
+                <div class="article">
+                    <span class="title">Ad Blocker</span>
+                    <p>Sagittis purus sit amet volutpat consequat mauris nunc 
+                        congue nisi. Molestie nunc non blandit massa enim nec dui. 
+                        Purus semper eget duis at tellus at urna condimentum mattis. </p>
+                </div>
+                <div class="article">
+                    <span class="title">Money Maker</span>
+                    <p>Nunc pulvinar sapien et ligula. Adipiscing bibendum est 
+                        ultricies integer quis. Eu sem integer vitae justo eget 
+                        magna fermentum.</p>
+                </div>
         </article>
     </main>
     <aside class="sidebar">
@@ -66,7 +119,7 @@
         </div>
     </aside>
 <footer class="footer">
-    <p>Created by Xila as part of The Odin Project Cirriculum</p>
+    <p>Created by <a href="www.github.com/xila89">Xila</a> as part of <a href="www.theodinproject.com"> The Odin Project</a> Cirriculum</p>
         </footer>
         </div>
     </body>
